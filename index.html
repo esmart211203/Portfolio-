@@ -1,85 +1,1490 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.png"/>
 
-</head>
-<body>
-    <header> 
-        <h1>DO XUAN TRONG</h1> 
-        <p>Backend Developer with a Passion for Coding</p> 
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Do Xuan Trong, a dedicated backend developer with a strong passion for coding. I enjoy creating robust and efficient server-side applications that make a difference. My focus is on delivering high-quality solutions and continuously improving my skills.</p>
-        <p>Education: Studied at Thu Duc College of Technology from 2021 to 2024.</p>
-        <p>Feel free to check out my work on <a href="https://github.com/esmart211203" target="_blank">GitHub</a> or contact me at <a href="mailto:esmart211203@gmail.com">esmart211203@gmail.com</a>.</p>
-    </section>
-    
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-item">
-            <h3>Intern Backend Development at iStudent</h3>
-            <p>May 2023 - Dec 2023 · 8 months</p>
-            <p>Location: Đ. Nguyễn Du, Đông Hoà, Dĩ An, Bình Dương · On-site</p>
-            <ul>
-                <li>Designing uniforms.</li>
-                <li>Creating websites using WordPress.</li>
-                <li>Analyzing, designing, and proposing solutions for clients.</li>
-                <li>Participating in the development of company applications.</li>
-            </ul>
-            <p>Skills: PHP and Python (Programming Language)</p>
+    <head>
+        <meta charset="utf-8">
+        <title>ET-Food - Đặc Sản Tây Nguyên</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            .carousel-item img{
+                width: 100%;
+                max-height: 300px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
         </div>
-    </section>
-    
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>TroveTechCommerce Website✨</h3>
-            <p>May 2024 - Sep 2024</p>
-            <p>Location: Remote</p>
-            <ul>
-                <li>Developed an e-commerce platform using Django.</li>
-                <li>Implemented a machine learning model to analyze and classify customer feedback.</li>
-                <li>Integrated payment systems and optimized user experience.</li>
-                <li>Managed product listings, order management, and customer accounts.</li>
-            </ul>
-            <p>Technologies Used: Python (Django, scikit-learn), HTML, CSS, JavaScript, MySQL</p>
-            <p><a href="#" target="_blank">GitHub</a> | <a href="#" target="_blank">Demo</a></p>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid fixed-top">
+        <!-- Topbar -->
+        <div class="container topbar bg-primary d-none d-lg-block">
+            <div class="d-flex justify-content-between">
+            <div class="top-info ps-2">
+                <small class="me-3">
+                <i class="fas fa-map-marker-alt me-2 text-secondary"></i>
+                <a href="#" class="text-white">123 Phan Chu Trinh, TP. Buôn Ma Thuột</a>
+                </small>
+                <small class="me-3">
+                <i class="fas fa-envelope me-2 text-secondary"></i>
+                <a href="mailto:lienhe@etfood.vn" class="text-white">lienhe@etfood.vn</a>
+                </small>
+            </div>
+            <div class="top-link pe-2">
+                <a href="#" class="text-white"><small class="text-white mx-2">Chính Sách Bảo Mật</small>/</a>
+                <a href="#" class="text-white"><small class="text-white mx-2">Điều Khoản Sử Dụng</small>/</a>
+                <a href="#" class="text-white"><small class="text-white ms-2">Đổi Trả & Hoàn Tiền</small></a>
+            </div>
+            </div>
         </div>
-        <!-- <div class="project">
-            <h3>Project B</h3>
-            <p>Description of Project B.</p>
-        </div> -->
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at: <a href="mailto:esmart211203@gmail.com">esmart211203@gmail.com</a></p>
-        <p>Check out my work on <a href="https://github.com/esmart211203" target="_blank">GitHub</a></p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Esmart 211203</p>
-    </footer>
-    
-    
-    <script src="script.js"></script>
-</body>
+
+        <!-- Navbar -->
+        <div class="container px-0">
+            <nav class="navbar navbar-light bg-white navbar-expand-xl">
+            <a href="index.html" class="navbar-brand">
+                <h1 class="text-primary display-6 fw-bold mb-0">ET-Food</h1>
+                <small class="text-secondary d-block" style="font-size: 14px;">Đặc sản Đắk Lắk</small>
+            </a>
+            <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+
+            <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
+                <a href="#" class="nav-item nav-link">Giới thiệu</a>
+                <a href="shop.html" class="nav-item nav-link">Cửa Hàng</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Trang Khác</a>
+                    <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                    <a href="cart.html" class="dropdown-item">Giỏ Hàng</a>
+                    <a href="checkout.html" class="dropdown-item">Thanh Toán</a>
+                    <a href="testimonial.html" class="dropdown-item">Đánh Giá</a>
+                    <a href="404.html" class="dropdown-item">Trang 404</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Liên Hệ</a>
+                </div>
+
+                <div class="d-flex m-3 me-0">
+                <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
+                        data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search text-primary"></i>
+                </button>
+
+                <a href="#" class="position-relative me-4 my-auto">
+                    <i class="fa fa-shopping-bag fa-2x"></i>
+                    <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1"
+                        style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                </a>
+
+                <a href="#" class="my-auto">
+                    <i class="fas fa-user fa-2x"></i>
+                </a>
+                </div>
+            </div>
+            </nav>
+        </div>
+        </div>
+        <!-- Navbar End -->
+
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+        <!-- Hero Start -->
+        <div class="container-fluid py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                <!-- Left: Copy + Search -->
+                <div class="col-md-12 col-lg-7">
+                    <h4 class="mb-3 text-secondary">Tinh hoa núi rừng Tây Nguyên</h4>
+                    <h1 class="mb-4 display-4 text-primary">Đặc Sản Đắk Lắk: Rượu Cần, Cà Phê, Mật Ong, Tiêu, Điều</h1>
+
+                    <!-- Search -->
+                    <form class="position-relative mx-auto" action="/shop.html" method="get" role="search" aria-label="Tìm kiếm sản phẩm">
+                    <div class="d-flex gap-2 flex-wrap">
+                        <input
+                        class="form-control border-2 border-secondary flex-grow-1 py-3 px-4 rounded-pill"
+                        type="search" name="q" autocomplete="on"
+                        placeholder="Tìm đặc sản... (ví dụ: cà phê rang mộc, mật ong rừng)">
+                        <button type="submit"
+                        class="btn btn-primary border-2 border-secondary py-3 px-4 rounded-pill text-white">
+                        Tìm kiếm
+                        </button>
+                    </div>
+                    </form>
+
+                    <!-- Quick category chips -->
+                    <div class="mt-3 d-flex flex-wrap gap-2">
+                    <a href="/shop.html?category=ruou-can" class="badge rounded-pill bg-secondary-subtle text-dark px-3 py-2">Rượu cần</a>
+                    <a href="/shop.html?category=ca-phe" class="badge rounded-pill bg-secondary-subtle text-dark px-3 py-2">Cà phê</a>
+                    <a href="/shop.html?category=mat-ong" class="badge rounded-pill bg-secondary-subtle text-dark px-3 py-2">Mật ong</a>
+                    <a href="/shop.html?category=tieu-den" class="badge rounded-pill bg-secondary-subtle text-dark px-3 py-2">Tiêu đen</a>
+                    <a href="/shop.html?category=dieu-rang" class="badge rounded-pill bg-secondary-subtle text-dark px-3 py-2">Điều rang</a>
+                    </div>
+                </div>
+
+                <!-- Right: Carousel -->
+                <div class="col-md-12 col-lg-5">
+                    <div id="heroCarousel" class="carousel slide position-relative" data-bs-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <!-- Slide 1: Rượu cần -->
+                        <div class="carousel-item active rounded" data-bs-interval="3500">
+                        <img
+                            src="/img/hero/ruou-can.jpg"
+                            class="img-fluid w-100 h-100 rounded object-fit-cover bg-secondary"
+                            alt="Rượu cần Đắk Lắk chuẩn vị Tây Nguyên" loading="lazy">
+                        <a href="/shop.html?category=ruou-can" class="hero-tag btn px-4 py-2 text-white rounded">Rượu cần</a>
+                        </div>
+                        <!-- Slide 2: Cà phê -->
+                        <div class="carousel-item rounded" data-bs-interval="3500">
+                        <img
+                            src="/img/hero/ca-phe.jpg"
+                            class="img-fluid w-100 h-100 rounded object-fit-cover"
+                            alt="Cà phê rang mộc Buôn Ma Thuột" loading="lazy">
+                        <a href="/shop.html?category=ca-phe" class="hero-tag btn px-4 py-2 text-white rounded">Cà phê</a>
+                        </div>
+                        <!-- Slide 3: Mật ong -->
+                        <div class="carousel-item rounded" data-bs-interval="3500">
+                        <img
+                            src="/img/hero/mat-ong.jpg"
+                            class="img-fluid w-100 h-100 rounded object-fit-cover"
+                            alt="Mật ong rừng nguyên chất" loading="lazy">
+                        <a href="/shop.html?category=mat-ong" class="hero-tag btn px-4 py-2 text-white rounded">Mật ong</a>
+                        </div>
+                        <!-- Slide 4: Tiêu -->
+                        <div class="carousel-item rounded" data-bs-interval="3500">
+                        <img
+                            src="/img/hero/tieu-den.jpg"
+                            class="img-fluid w-100 h-100 rounded object-fit-cover"
+                            alt="Tiêu đen nồng thơm Tây Nguyên" loading="lazy">
+                        <a href="/shop.html?category=tieu-den" class="hero-tag btn px-4 py-2 text-white rounded">Tiêu đen</a>
+                        </div>
+                        <!-- Slide 5: Điều -->
+                        <div class="carousel-item rounded" data-bs-interval="3500">
+                        <img
+                            src="/img/hero/dieu-rang.jpg"
+                            class="img-fluid w-100 h-100 rounded object-fit-cover"
+                            alt="Hạt điều rang bơ giòn bùi" loading="lazy">
+                        <a href="/shop.html?category=dieu-rang" class="hero-tag btn px-4 py-2 text-white rounded">Điều rang</a>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Trước">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Trước</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Sau">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Sau</span>
+                    </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hero End -->
+
+
+
+        <!-- Featurs Section Start -->
+        <div class="container-fluid featurs py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                <!-- Feature 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                        <i class="fas fa-truck fa-3x text-white"></i>
+                    </div>
+                    <div class="featurs-content text-center">
+                        <h5>Giao Hàng Toàn Quốc</h5>
+                        <p class="mb-0">Nhanh chóng – An toàn – Tận tay khách hàng</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                        <i class="fas fa-seedling fa-3x text-white"></i>
+                    </div>
+                    <div class="featurs-content text-center">
+                        <h5>100% Đặc Sản Nguyên Chất</h5>
+                        <p class="mb-0">nguồn gốc Tây Nguyên rõ ràng</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                        <i class="fas fa-sync-alt fa-3x text-white"></i>
+                    </div>
+                    <div class="featurs-content text-center">
+                        <h5>Đổi Trả Dễ Dàng</h5>
+                        <p class="mb-0">Hỗ trợ đổi trả trong 7 ngày nếu có lỗi sản phẩm</p>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="featurs-item text-center rounded bg-light p-4">
+                    <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                        <i class="fa fa-headset fa-3x text-white"></i>
+                    </div>
+                    <div class="featurs-content text-center">
+                        <h5>Hỗ Trợ Tận Tâm 24/7</h5>
+                        <p class="mb-0">Tư vấn – đặt hàng – giải đáp nhanh chóng</p>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featurs Section End -->
+
+
+
+        <!-- Products (Đặc sản Đắk Lắk) Start -->
+        <div class="container-fluid fruite py-5">
+            <div class="container py-5">
+                <div class="tab-class text-center">
+                <div class="row g-4">
+                    <div class="col-lg-4 text-start">
+                    <h1>Đặc Sản ET-Food</h1>
+                    </div>
+                    <div class="col-lg-8 text-end">
+                    <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                        <li class="nav-item">
+                        <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-all">
+                            <span class="text-dark" style="width: 150px;">Tất cả</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-ruou">
+                            <span class="text-dark" style="width: 150px;">Rượu cần</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-caphe">
+                            <span class="text-dark" style="width: 150px;">Cà phê</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-matong">
+                            <span class="text-dark" style="width: 150px;">Mật ong</span>
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-tieudieu">
+                            <span class="text-dark" style="width: 150px;">Tiêu & Điều</span>
+                        </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+
+                <div class="tab-content">
+                    <!-- TAB: Tất cả -->
+                    <div id="tab-all" class="tab-pane fade show p-0 active">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                        <div class="row g-4">
+                            <!-- Card 1: Rượu cần -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/ruou-can-2l.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Rượu cần Đắk Lắk bình 2L">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top:10px;left:10px;">Rượu cần</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Rượu cần bình 2L</h4>
+                                <p>Men lá truyền thống, ủ nếp than – hương vị đậm chất Tây Nguyên.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">350.000đ / bình</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <!-- Card 2: Cà phê hạt -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/ca-phe-hat-rang-moc.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Cà phê hạt rang mộc Buôn Ma Thuột">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top:10px;left:10px;">Cà phê</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Cà phê hạt rang mộc</h4>
+                                <p>Blend Robusta/Arabica, rang mộc giữ trọn hương – không tẩm ướp.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">149.000đ / 500g</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <!-- Card 3: Mật ong rừng -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/mat-ong-rung-nguyen-chat.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Mật ong rừng nguyên chất Đắk Lắk">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top:10px;left:10px;">Mật ong</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Mật ong rừng nguyên chất</h4>
+                                <p>Vị ngọt thanh, thơm thảo mộc – thu hoạch theo mùa hoa rừng.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">220.000đ / 500ml</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <!-- Card 4: Tiêu đen -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/tieu-den-bmt.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Tiêu đen Đắk Lắk hạt to thơm">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top:10px;left:10px;">Tiêu</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Tiêu đen hạt tuyển</h4>
+                                <p>Hạt to, thơm mạnh – phơi nắng tự nhiên, vị cay nồng đặc trưng.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">95.000đ / 250g</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <!-- Card 5: Điều rang bơ -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/dieu-rang-bo.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Hạt điều rang bơ giòn bùi">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top:10px;left:10px;">Điều</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Hạt điều rang bơ</h4>
+                                <p>Hạt nguyên, giòn bùi – rang bơ thơm nhẹ, ăn là ghiền.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">135.000đ / 250g</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <!-- Card 6: Cà phê bột phin -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/ca-phe-bot-phin.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Cà phê bột pha phin Buôn Ma Thuột">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top:10px;left:10px;">Cà phê</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Cà phê bột pha phin</h4>
+                                <p>Vị đậm, hậu ngọt – tối ưu cho phin Việt và máy nhỏ.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">129.000đ / 500g</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <!-- Card 7: Sáp ong -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/sap-ong-rung.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Sáp ong rừng tự nhiên">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top:10px;left:10px;">Mật ong</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Sáp ong rừng</h4>
+                                <p>Giàu dưỡng chất, thơm mùi sữa ong – dùng pha trà/ủ rượu.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">165.000đ / 200g</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <!-- Card 8: Muối tiêu rừng -->
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/muoi-tieu-rung.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Muối tiêu rừng đặc trưng Tây Nguyên">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                    style="top:10px;left:10px;">Tiêu</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Muối tiêu rừng</h4>
+                                <p>Pha trộn tiêu rừng – lá chanh – muối hầm; chấm đồ nướng tuyệt hảo.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">45.000đ / hũ</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                                    </a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- /row -->
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- TAB: Rượu cần -->
+                    <div id="tab-ruou" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/ruou-can-2l.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Rượu cần bình 2L">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;left:10px;">Rượu cần</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Rượu cần bình 2L</h4>
+                                <p>Ủ men lá truyền thống – hậu vị ngọt dịu.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">350.000đ / bình</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/ruou-can-mini.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Rượu cần mini quà tặng">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;left:10px;">Rượu cần</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Rượu cần mini (500ml)</h4>
+                                <p>Thích hợp làm quà tặng, đóng gói đẹp.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">120.000đ / chai</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- /row -->
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- TAB: Cà phê -->
+                    <div id="tab-caphe" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/ca-phe-hat-rang-moc.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Cà phê hạt rang mộc">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;left:10px;">Cà phê</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Cà phê hạt rang mộc</h4>
+                                <p>Giữ trọn hương vị nguyên bản, không tẩm.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">149.000đ / 500g</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/ca-phe-bot-phin.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Cà phê bột pha phin">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;left:10px;">Cà phê</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Cà phê bột pha phin</h4>
+                                <p>Đậm đà, hậu ngọt – hợp gu Việt.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">129.000đ / 500g</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- /row -->
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- TAB: Mật ong -->
+                    <div id="tab-matong" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/mat-ong-rung-nguyen-chat.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Mật ong rừng nguyên chất">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;left:10px;">Mật ong</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Mật ong rừng nguyên chất</h4>
+                                <p>Thuần khiết, thơm mùi thảo mộc rừng.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">220.000đ / 500ml</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/sap-ong-rung.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Sáp ong rừng">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;left:10px;">Mật ong</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Sáp ong rừng</h4>
+                                <p>Dùng pha trà hoặc ủ rượu – giàu dưỡng chất.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">165.000đ / 200g</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div><!-- /row -->
+                        </div>
+                    </div>
+                    </div>
+
+                    <!-- TAB: Tiêu & Điều -->
+                    <div id="tab-tieudieu" class="tab-pane fade show p-0">
+                    <div class="row g-4">
+                        <div class="col-lg-12">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/tieu-den-bmt.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Tiêu đen hạt tuyển Đắk Lắk">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;left:10px;">Tiêu</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Tiêu đen hạt tuyển</h4>
+                                <p>Hạt to – thơm nồng – phơi nắng tự nhiên.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">95.000đ / 250g</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/dieu-rang-bo.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Hạt điều rang bơ Đắk Lắk">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;left:10px;">Điều</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Hạt điều rang bơ</h4>
+                                <p>Giòn bùi, hạt nguyên – đóng gói hút chân không.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">135.000đ / 250g</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-4 col-xl-3">
+                            <div class="rounded position-relative fruite-item">
+                                <div class="fruite-img">
+                                <img src="/img/products/muoi-tieu-rung.jpg" class="img-fluid w-100 rounded-top"
+                                    alt="Muối tiêu rừng Tây Nguyên">
+                                </div>
+                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;left:10px;">Tiêu</div>
+                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                <h4>Muối tiêu rừng</h4>
+                                <p>Công thức tiêu rừng – lá chanh – muối hầm.</p>
+                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                    <p class="text-dark fs-5 fw-bold mb-0">45.000đ / hũ</p>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ</a>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+
+                        </div><!-- /row -->
+                        </div>
+                    </div>
+                    </div>
+
+                </div><!-- /tab-content -->
+                </div>
+            </div>
+        </div>
+        <!-- Products End -->
+
+
+
+        <!-- Features Start -->
+        <div class="container-fluid service py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+            <p class="section-title text-secondary">ET-FOOD</p>
+            <h2 class="fw-bold">Ưu Điểm Nổi Bật Của Đặc Sản Đắk Lắk</h2>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+            <!-- Feature 1 -->
+            <div class="col-md-6 col-lg-4">
+                <a href="#">
+                <div class="service-item bg-secondary rounded border border-secondary overflow-hidden">
+                    <img src="img/featur-1.jpg" class="img-fluid rounded-top w-100" alt="Đặc sản nguyên chất">
+                    <div class="px-4 rounded-bottom">
+                    <div class="service-content bg-light text-center p-4 rounded shadow-sm">
+                        <h5 class="text-secondary fw-bold">100% Nguyên Chất</h5>
+                        <p class="mb-0 text-dark">Cam kết nguồn gốc rõ ràng – thuần tự nhiên, không pha tạp.</p>
+                    </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-md-6 col-lg-4">
+                <a href="#">
+                <div class="service-item bg-primary rounded border border-primary overflow-hidden">
+                    <img src="img/featur-2.jpg" class="img-fluid rounded-top w-100" alt="Hương vị Tây Nguyên">
+                    <div class="px-4 rounded-bottom">
+                    <div class="service-content bg-white text-center p-4 rounded shadow-sm">
+                        <h5 class="text-primary fw-bold">Hương Vị Tây Nguyên</h5>
+                        <p class="mb-0 text-dark">Mỗi sản phẩm mang đậm bản sắc núi rừng Đắk Lắk.</p>
+                    </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-md-6 col-lg-4">
+                <a href="#">
+                <div class="service-item bg-dark rounded border border-dark overflow-hidden">
+                    <img src="img/featur-3.jpg" class="img-fluid rounded-top w-100" alt="Giao hàng toàn quốc">
+                    <div class="px-4 rounded-bottom">
+                    <div class="service-content bg-secondary text-center p-4 rounded shadow-sm">
+                        <h5 class="text-white fw-bold">Giao Hàng Toàn Quốc</h5>
+                        <p class="mb-0 text-light">Nhanh chóng – an toàn – giao hàng mọi miền.</p>
+                    </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Features End -->
+
+
+
+        <!-- ET-Food Specialties Start -->
+        <div class="container-fluid vesitable py-5">
+            <div class="container py-5">
+                <div class="text-start mb-5">
+                <p class="section-title text-secondary">ET-FOOD</p>
+                <h2 class="fw-bold">Đặc Sản Nổi Bật Tây Nguyên</h2>
+                <p class="text-muted">Tinh hoa núi rừng Đắk Lắk – chọn lọc từ tự nhiên, giao tận nơi toàn quốc</p>
+                </div>
+
+                <div class="owl-carousel vegetable-carousel justify-content-center">
+                <!-- Item 1 -->
+                <div class="border border-secondary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                    <img src="img/products/ruou-can-2l.jpg" class="img-fluid w-100 rounded-top" alt="Rượu cần Đắk Lắk">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;right:10px;">Rượu cần</div>
+                    <div class="p-4 rounded-bottom bg-white">
+                    <h4>Rượu cần bình 2L</h4>
+                    <p>Men lá truyền thống – hương vị nguyên bản Tây Nguyên.</p>
+                    <div class="d-flex justify-content-between flex-lg-wrap">
+                        <p class="text-dark fs-5 fw-bold mb-0">350.000đ / bình</p>
+                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="border border-secondary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                    <img src="img/products/ca-phe-hat-rang-moc.jpg" class="img-fluid w-100 rounded-top" alt="Cà phê hạt rang mộc">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;right:10px;">Cà phê</div>
+                    <div class="p-4 rounded-bottom bg-white">
+                    <h4>Cà phê hạt rang mộc</h4>
+                    <p>Blend Robusta & Arabica – rang mộc, không tẩm, đậm đà tự nhiên.</p>
+                    <div class="d-flex justify-content-between flex-lg-wrap">
+                        <p class="text-dark fs-5 fw-bold mb-0">149.000đ / 500g</p>
+                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="border border-secondary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                    <img src="img/products/mat-ong-rung-nguyen-chat.jpg" class="img-fluid w-100 rounded-top" alt="Mật ong rừng nguyên chất">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;right:10px;">Mật ong</div>
+                    <div class="p-4 rounded-bottom bg-white">
+                    <h4>Mật ong rừng nguyên chất</h4>
+                    <p>Ngọt thanh, thơm mùi hoa rừng – thu hoạch thủ công, không pha tạp.</p>
+                    <div class="d-flex justify-content-between flex-lg-wrap">
+                        <p class="text-dark fs-5 fw-bold mb-0">220.000đ / 500ml</p>
+                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="border border-secondary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                    <img src="img/products/tieu-den-bmt.jpg" class="img-fluid w-100 rounded-top" alt="Tiêu đen Đắk Lắk">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;right:10px;">Tiêu</div>
+                    <div class="p-4 rounded-bottom bg-white">
+                    <h4>Tiêu đen hạt tuyển</h4>
+                    <p>Thơm mạnh – cay nồng đặc trưng, phơi nắng tự nhiên.</p>
+                    <div class="d-flex justify-content-between flex-lg-wrap">
+                        <p class="text-dark fs-5 fw-bold mb-0">95.000đ / 250g</p>
+                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="border border-secondary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                    <img src="img/products/dieu-rang-bo.jpg" class="img-fluid w-100 rounded-top" alt="Hạt điều rang bơ">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;right:10px;">Điều</div>
+                    <div class="p-4 rounded-bottom bg-white">
+                    <h4>Hạt điều rang bơ</h4>
+                    <p>Hạt nguyên, giòn bùi, rang thơm nhẹ – ăn là ghiền.</p>
+                    <div class="d-flex justify-content-between flex-lg-wrap">
+                        <p class="text-dark fs-5 fw-bold mb-0">135.000đ / 250g</p>
+                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                        </a>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="border border-secondary rounded position-relative vesitable-item">
+                    <div class="vesitable-img">
+                    <img src="img/products/muoi-tieu-rung.jpg" class="img-fluid w-100 rounded-top" alt="Muối tiêu rừng Tây Nguyên">
+                    </div>
+                    <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top:10px;right:10px;">Gia vị</div>
+                    <div class="p-4 rounded-bottom bg-white">
+                    <h4>Muối tiêu rừng</h4>
+                    <p>Kết hợp tiêu rừng – lá chanh – muối hầm, chấm đồ nướng tuyệt hảo.</p>
+                    <div class="d-flex justify-content-between flex-lg-wrap">
+                        <p class="text-dark fs-5 fw-bold mb-0">45.000đ / hũ</p>
+                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                        </a>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- ET-Food Specialties End -->
+
+
+
+        <!-- Banner Section Start -->
+        <div class="container-fluid banner bg-info my-5">
+            <div class="container py-5">
+                <div class="row g-4 align-items-center">
+                <!-- Left content -->
+                <div class="col-lg-6">
+                    <div class="py-4 text-lg-start text-center">
+                    <h1 class="display-4 fw-bold text-white mb-2">Đặc Sản Tây Nguyên</h1>
+                    <p class="display-6 fw-semibold text-white mb-4">Chất Lượng – Tinh Túy – Tự Nhiên</p>
+                    <p class="text-light mb-4">
+                        Trải nghiệm hương vị nguyên bản từ núi rừng Đắk Lắk – cà phê, mật ong, rượu cần, hạt điều…
+                        tất cả đều được chọn lọc kỹ lưỡng từ nông trại địa phương.
+                    </p>
+                    <a href="#products" class="banner-btn btn border-2 border-white rounded-pill text-white py-3 px-5">
+                        <i class="fa fa-shopping-basket me-2"></i> Khám Phá Ngay
+                    </a>
+                    </div>
+                </div>
+
+                <!-- Right image -->
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                    <img src="img/banner-etfood.jpg" class="img-fluid w-100 rounded shadow-lg" alt="Đặc sản ET-Food">
+                    <div
+                        class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute shadow-lg"
+                        style="width: 140px; height: 140px; top: 10px; left: 10px;">
+                        <div class="text-center">
+                        <h1 class="fw-bold text-secondary mb-0" style="font-size: 42px;">-20%</h1>
+                        <p class="mb-0 text-dark small">Ưu đãi tháng này</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Banner Section End -->
+
+
+
+        <!-- Bestsellers Start -->
+        <div class="container-fluid py-5 et-bestsellers">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width:700px;">
+            <h1 class="display-5 fw-bold">Sản Phẩm Bán Chạy</h1>
+            <p class="text-muted">Tinh tuyển từ Đắk Lắk – giao nhanh toàn quốc</p>
+            </div>
+
+            <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="p-4 rounded bg-light shadow-sm h-100">
+                <div class="row align-items-center g-3">
+                    <div class="col-6 text-center">
+                    <div class="best-thumb">
+                        <img src="/img/products/ruou-can-2l.jpg" alt="Rượu cần 2L">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                    <a href="#" class="h5 d-block mb-2">Rượu cần bình 2L</a>
+                    <div class="d-flex my-2">
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-muted"></i>
+                    </div>
+                    <h4 class="mb-3 text-secondary">350.000đ</h4>
+                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="p-4 rounded bg-light shadow-sm h-100">
+                <div class="row align-items-center g-3">
+                    <div class="col-6 text-center">
+                    <div class="best-thumb">
+                        <img src="/img/products/ca-phe-hat-rang-moc.jpg" alt="Cà phê hạt rang mộc">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                    <a href="#" class="h5 d-block mb-2">Cà phê hạt rang mộc</a>
+                    <div class="d-flex my-2">
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-muted"></i>
+                    </div>
+                    <h4 class="mb-3 text-secondary">149.000đ / 500g</h4>
+                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="p-4 rounded bg-light shadow-sm h-100">
+                <div class="row align-items-center g-3">
+                    <div class="col-6 text-center">
+                    <div class="best-thumb">
+                        <img src="/img/products/mat-ong-rung-nguyen-chat.jpg" alt="Mật ong rừng nguyên chất">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                    <a href="#" class="h5 d-block mb-2">Mật ong rừng nguyên chất</a>
+                    <div class="d-flex my-2">
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-muted"></i>
+                    </div>
+                    <h4 class="mb-3 text-secondary">220.000đ / 500ml</h4>
+                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="p-4 rounded bg-light shadow-sm h-100">
+                <div class="row align-items-center g-3">
+                    <div class="col-6 text-center">
+                    <div class="best-thumb">
+                        <img src="/img/products/tieu-den-bmt.jpg" alt="Tiêu đen hạt tuyển">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                    <a href="#" class="h5 d-block mb-2">Tiêu đen hạt tuyển</a>
+                    <div class="d-flex my-2">
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-muted"></i>
+                    </div>
+                    <h4 class="mb-3 text-secondary">95.000đ / 250g</h4>
+                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="p-4 rounded bg-light shadow-sm h-100">
+                <div class="row align-items-center g-3">
+                    <div class="col-6 text-center">
+                    <div class="best-thumb">
+                        <img src="/img/products/dieu-rang-bo.jpg" alt="Hạt điều rang bơ">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                    <a href="#" class="h5 d-block mb-2">Hạt điều rang bơ</a>
+                    <div class="d-flex my-2">
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-muted"></i>
+                    </div>
+                    <h4 class="mb-3 text-secondary">135.000đ / 250g</h4>
+                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-lg-6 col-xl-4">
+                <div class="p-4 rounded bg-light shadow-sm h-100">
+                <div class="row align-items-center g-3">
+                    <div class="col-6 text-center">
+                    <div class="best-thumb">
+                        <img src="/img/products/muoi-tieu-rung.jpg" alt="Muối tiêu rừng">
+                    </div>
+                    </div>
+                    <div class="col-6">
+                    <a href="#" class="h5 d-block mb-2">Muối tiêu rừng</a>
+                    <div class="d-flex my-2">
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-muted"></i>
+                    </div>
+                    <h4 class="mb-3 text-secondary">45.000đ / hũ</h4>
+                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                        <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                    </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- 4 tiles dưới (ảnh chữ nhật) -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="text-center p-3 h-100 bg-white rounded shadow-sm">
+                <img src="/img/products/ca-phe-bot-phin.jpg" class="img-fluid rounded w-100 best-rect" alt="Cà phê bột phin">
+                <div class="py-3">
+                    <a href="#" class="h6 d-block mb-2">Cà phê bột pha phin</a>
+                    <div class="d-flex my-2 justify-content-center">
+                    <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-muted"></i>
+                    </div>
+                    <h5 class="mb-3 text-secondary">129.000đ / 500g</h5>
+                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="text-center p-3 h-100 bg-white rounded shadow-sm">
+                <img src="/img/products/mat-ong-rung-nguyen-chat.jpg" class="img-fluid rounded w-100 best-rect" alt="Mật ong rừng">
+                <div class="py-3">
+                    <a href="#" class="h6 d-block mb-2">Mật ong rừng nguyên chất</a>
+                    <div class="d-flex my-2 justify-content-center">
+                    <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-muted"></i>
+                    </div>
+                    <h5 class="mb-3 text-secondary">220.000đ / 500ml</h5>
+                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="text-center p-3 h-100 bg-white rounded shadow-sm">
+                <img src="/img/products/dieu-rang-bo.jpg" class="img-fluid rounded w-100 best-rect" alt="Hạt điều rang bơ">
+                <div class="py-3">
+                    <a href="#" class="h6 d-block mb-2">Hạt điều rang bơ</a>
+                    <div class="d-flex my-2 justify-content-center">
+                    <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-muted"></i>
+                    </div>
+                    <h5 class="mb-3 text-secondary">135.000đ / 250g</h5>
+                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="text-center p-3 h-100 bg-white rounded shadow-sm">
+                <img src="/img/products/tieu-den-bmt.jpg" class="img-fluid rounded w-100 best-rect" alt="Tiêu đen hạt tuyển">
+                <div class="py-3">
+                    <a href="#" class="h6 d-block mb-2">Tiêu đen hạt tuyển</a>
+                    <div class="d-flex my-2 justify-content-center">
+                    <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-warning"></i><i class="fas fa-star text-warning"></i>
+                    <i class="fas fa-star text-muted"></i>
+                    </div>
+                    <h5 class="mb-3 text-secondary">95.000đ / 250g</h5>
+                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-shopping-bag me-2 text-primary"></i> Thêm vào giỏ
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </div>
+        <!-- Bestsellers End -->
+
+
+
+        <!-- Facts Start -->
+        <div class="container-fluid py-5 et-facts">
+            <div class="container">
+                <div class="bg-light p-5 rounded">
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter bg-white rounded p-5 text-center shadow-sm">
+                        <i class="fa fa-users text-secondary mb-3 fa-2x"></i>
+                        <h4 class="mb-2">Khách hàng hài lòng</h4>
+                        <h1 class="mb-0"><span class="countup" data-to="1963">0</span></h1>
+                    </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter bg-white rounded p-5 text-center shadow-sm">
+                        <i class="fa fa-star text-secondary mb-3 fa-2x"></i>
+                        <h4 class="mb-2">Chất lượng dịch vụ</h4>
+                        <h1 class="mb-0"><span class="countup" data-to="99" data-suffix="%">0</span></h1>
+                    </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter bg-white rounded p-5 text-center shadow-sm">
+                        <i class="fa fa-certificate text-secondary mb-3 fa-2x"></i>
+                        <h4 class="mb-2">Chứng nhận chất lượng</h4>
+                        <h1 class="mb-0"><span class="countup" data-to="33">0</span></h1>
+                    </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter bg-white rounded p-5 text-center shadow-sm">
+                        <i class="fa fa-boxes text-secondary mb-3 fa-2x"></i>
+                        <h4 class="mb-2">Sản phẩm sẵn có</h4>
+                        <h1 class="mb-0"><span class="countup" data-to="789">0</span></h1>
+                    </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facts End -->
+
+
+
+        <!-- Testimonial Start -->
+        <div class="container-fluid testimonial py-5">
+        <div class="container py-5">
+            <div class="testimonial-header text-center">
+            <h4 class="text-primary">Cảm Nhận Khách Hàng</h4>
+            <h1 class="display-5 mb-5 text-dark">Họ Nói Gì Về ET-Food?</h1>
+            </div>
+
+            <div class="owl-carousel testimonial-carousel">
+            <!-- User 1 -->
+            <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                <div class="position-relative">
+                <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                <div class="mb-4 pb-4 border-bottom border-secondary">
+                    <p class="mb-0">
+                    “Rượu cần ngon, chuẩn vị Tây Nguyên. Giao hàng nhanh, đóng gói kỹ, mở ra thơm nức mũi!”
+                    </p>
+                </div>
+                <div class="d-flex align-items-center flex-nowrap">
+                    <div class="bg-secondary rounded">
+                    <img src="img/users/user-1.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="Nguyễn Minh">
+                    </div>
+                    <div class="ms-4 d-block">
+                    <h4 class="text-dark">Nguyễn Minh</h4>
+                    <p class="m-0 pb-3">Doanh nhân – TP.HCM</p>
+                    <div class="d-flex pe-5">
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- User 2 -->
+            <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                <div class="position-relative">
+                <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                <div class="mb-4 pb-4 border-bottom border-secondary">
+                    <p class="mb-0">
+                    “Mật ong rừng thơm dịu, vị ngọt thanh. Pha trà sáng rất ngon, lần sau sẽ mua thêm để biếu bạn bè.”
+                    </p>
+                </div>
+                <div class="d-flex align-items-center flex-nowrap">
+                    <div class="bg-secondary rounded">
+                    <img src="img/users/user-2.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="Trần Hoài An">
+                    </div>
+                    <div class="ms-4 d-block">
+                    <h4 class="text-dark">Trần Hoài An</h4>
+                    <p class="m-0 pb-3">Nhân viên văn phòng – Buôn Ma Thuột</p>
+                    <div class="d-flex pe-5">
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- User 3 -->
+            <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                <div class="position-relative">
+                <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                <div class="mb-4 pb-4 border-bottom border-secondary">
+                    <p class="mb-0">
+                    “Cà phê rang mộc đậm đà, hậu ngọt tự nhiên. Đóng gói đẹp, mùi hương lan khắp phòng.”
+                    </p>
+                </div>
+                <div class="d-flex align-items-center flex-nowrap">
+                    <div class="bg-secondary rounded">
+                    <img src="img/users/user-3.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="Phạm Gia Bảo">
+                    </div>
+                    <div class="ms-4 d-block">
+                    <h4 class="text-dark">Phạm Gia Bảo</h4>
+                    <p class="m-0 pb-3">Kỹ sư phần mềm – Hà Nội</p>
+                    <div class="d-flex pe-5">
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div><!-- /.owl-carousel -->
+        </div>
+        </div>
+        <!-- Testimonial End -->
+
+
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(233, 182, 84, 0.5);">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-3">
+                <a href="#">
+                    <h1 class="text-primary mb-0">ET-Food</h1>
+                    <p class="text-secondary mb-0">Đặc Sản Tây Nguyên</p>
+                </a>
+                </div>
+                <div class="col-lg-6">
+                <div class="position-relative mx-auto">
+                    <input class="form-control border-0 w-100 py-3 px-4 rounded-pill"
+                        type="email" placeholder="Nhập email để nhận ưu đãi và tin mới nhất">
+                    <button type="submit"
+                            class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white"
+                            style="top: 0; right: 0;">Đăng ký</button>
+                </div>
+                </div>
+                <div class="col-lg-3">
+                <div class="d-flex justify-content-end pt-3">
+                    <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="#"><i class="fab fa-tiktok"></i></a>
+                    <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="#"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-secondary btn-md-square rounded-circle" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                <h4 class="text-light mb-3">Về ET-Food</h4>
+                <p class="mb-4">
+                    ET-Food mang đến đặc sản nguyên bản Tây Nguyên: cà phê, mật ong, rượu cần, tiêu, điều… 
+                    tất cả đều được chọn lọc từ nông trại địa phương.
+                </p>
+                <a href="#" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Tìm hiểu thêm</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column text-start footer-item">
+                <h4 class="text-light mb-3">Danh mục sản phẩm</h4>
+                <a class="btn-link" href="#">Rượu cần</a>
+                <a class="btn-link" href="#">Cà phê</a>
+                <a class="btn-link" href="#">Mật ong</a>
+                <a class="btn-link" href="#">Tiêu & Điều</a>
+                <a class="btn-link" href="#">Đặc sản khác</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="d-flex flex-column text-start footer-item">
+                <h4 class="text-light mb-3">Chính sách</h4>
+                <a class="btn-link" href="#">Hướng dẫn mua hàng</a>
+                <a class="btn-link" href="#">Chính sách đổi trả</a>
+                <a class="btn-link" href="#">Bảo mật thông tin</a>
+                <a class="btn-link" href="#">Điều khoản sử dụng</a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-item">
+                <h4 class="text-light mb-3">Liên hệ</h4>
+                <p><i class="fa fa-map-marker-alt me-2 text-primary"></i>Đắk Lắk – Tây Nguyên</p>
+                <p><i class="fa fa-envelope me-2 text-primary"></i>etfood.vn@gmail.com</p>
+                <p><i class="fa fa-phone-alt me-2 text-primary"></i>0901 234 567</p>
+                <p>Phương thức thanh toán</p>
+                <img src="img/payment.png" class="img-fluid" alt="Thanh toán ET-Food">
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <span class="text-light">
+                <i class="fas fa-copyright text-light me-2"></i>
+                2025 <a href="#" class="text-light">ET-Food</a>. All rights reserved.
+                </span>
+            </div>
+            <div class="col-md-6 my-auto text-center text-md-end text-white">
+                Thiết kế & phát triển bởi <a class="border-bottom text-primary" href="https://ifreelan.com" target="_blank">iFreelan Digital</a>
+            </div>
+            </div>
+        </div>
+        </div>
+        <!-- Copyright End -->
+
+
+
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script>
+        (function() {
+        const els = document.querySelectorAll('.countup');
+        if (!('IntersectionObserver' in window) || !els.length) return;
+
+        const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+
+        function animate(el) {
+            const to = parseFloat(el.dataset.to || '0');
+            const suffix = el.dataset.suffix || '';
+            const duration = parseInt(el.dataset.duration || '1200', 10); // ms
+            const start = performance.now();
+
+            function frame(now) {
+            const p = Math.min((now - start) / duration, 1);
+            const v = Math.round(to * easeOutCubic(p));
+            el.textContent = v.toLocaleString('vi-VN') + suffix;
+            if (p < 1) requestAnimationFrame(frame);
+            }
+            requestAnimationFrame(frame);
+        }
+
+        const io = new IntersectionObserver((entries, obs) => {
+            entries.forEach(e => {
+            if (e.isIntersecting) {
+                animate(e.target);
+                obs.unobserve(e.target);
+            }
+            });
+        }, { threshold: 0.3 });
+
+        els.forEach(el => io.observe(el));
+        })();
+    </script>
+    </body>
+
 </html>
